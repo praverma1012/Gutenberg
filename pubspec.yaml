@@ -1,0 +1,26 @@
+name: gutenberg_deluxe
+description: Deluxe Gutenberg reader with polished storefront
+version: 2.0.0
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.0
+  cached_network_image: ^3.3.1
+  shared_preferences: ^2.2.2
+  provider: ^6.1.2
+  scrollable_positioned_list: ^0.3.8
+  smooth_page_indicator: ^1.1.0
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/fonts/
+  fonts:
+    - family: Literata
+      fonts:
+        - asset: assets/fonts/Literata-Regular.ttf
+        - asset: assets/fonts/Literata-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Literata-Italic.ttf
+          style: italic
