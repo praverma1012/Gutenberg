@@ -1,5 +1,17 @@
+// .devcontainer/devcontainer.json
 {
-  "name": "Flutter Starter",
-  "image": "ghcr.io/devcontainers-contrib/features/flutter:stable",
-  "postCreateCommand": "flutter doctor && flutter config --enable-web && flutter pub get"
+  "name": "Flutter Codespace",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",   // solid public image
+  "features": {
+    // pulls Flutter SDK + Dart from the official registry
+    "ghcr.io/devcontainers/features/flutter:1": {
+      "version": "stable",          // you can pin e.g. "3.22.1"
+      "installDart": "true"
+    }
+  },
+  "postCreateCommand": [
+    "flutter doctor -v",
+    "flutter config --enable-web",
+    "cd /workspaces/Gutenberg && flutter pub get"
+  ]
 }
