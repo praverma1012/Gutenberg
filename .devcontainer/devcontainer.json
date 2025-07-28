@@ -1,0 +1,19 @@
+{
+  // Use Ubuntu base image
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+
+  // Add the official Flutter dev-container Feature
+  "features": {
+    "ghcr.io/devcontainers/features/flutter:1": {
+      "version": "latest",
+      "channel": "stable",
+      "webdev": true        // enables web support automatically
+    }
+  },
+
+  // After container is built, fetch project packages
+  "postCreateCommand": "flutter pub get",
+
+  // Open VS Code in the project folder
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}"
+}
