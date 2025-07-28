@@ -1,6 +1,6 @@
 {
-  "name": "Flutter Codespace (MCR)",
-  "image": "mcr.microsoft.com/devcontainers/flutter:3.22",   // ← public, no auth
+  "name": "Flutter Codespace (stable)",
+  "image": "mcr.microsoft.com/devcontainers/flutter:stable",
   "postCreateCommand": [
     "flutter doctor -v",
     "flutter config --enable-web",
