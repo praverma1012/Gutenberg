@@ -1,5 +1,5 @@
 {
-  "name": "Flutter Codespace",
-  "image": "ghcr.io/codespaces-templates/flutter:latest",
-  "postCreateCommand": "flutter config --enable-web && flutter pub get"
+  "name": "Flutter Starter",
+  "image": "ghcr.io/devcontainers-contrib/features/flutter:stable",
+  "postCreateCommand": "flutter doctor && flutter config --enable-web && flutter pub get"
 }
