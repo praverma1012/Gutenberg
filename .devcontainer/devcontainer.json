@@ -1,14 +1,6 @@
-// .devcontainer/devcontainer.json
 {
-  "name": "Flutter Codespace",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",   // solid public image
-  "features": {
-    // pulls Flutter SDK + Dart from the official registry
-    "ghcr.io/devcontainers/features/flutter:1": {
-      "version": "stable",          // you can pin e.g. "3.22.1"
-      "installDart": "true"
-    }
-  },
+  "name": "Flutter Codespace (MCR)",
+  "image": "mcr.microsoft.com/devcontainers/flutter:3.22",   // ← public, no auth
   "postCreateCommand": [
     "flutter doctor -v",
     "flutter config --enable-web",
